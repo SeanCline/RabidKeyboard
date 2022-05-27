@@ -3053,10 +3053,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 353.06 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 015d8607-3ea7-4223-b32a-2c55d882881a)
     (property "Reference" "SW94" (id 0) (at 353.06 63.5 0))
-    (property "Value" "Key" (id 1) (at 353.06 69.85 0))
+    (property "Value" "Unused" (id 1) (at 353.06 69.85 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 353.06 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3129,10 +3131,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 332.74 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 07281f0d-bb2a-41e4-b9a7-d78d5a7b1585)
     (property "Reference" "SW88" (id 0) (at 332.74 63.5 0))
-    (property "Value" "Key" (id 1) (at 332.74 69.85 0))
+    (property "Value" "Unused" (id 1) (at 332.74 69.85 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 332.74 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3283,7 +3287,7 @@
     (uuid 14f5566a-1a5e-464d-8e0d-f52e2fdd2c4c)
     (property "Reference" "SW18" (id 0) (at 88.9 88.9 0))
     (property "Value" "Key" (id 1) (at 88.9 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 88.9 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 88.9 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 88.9 87.63 0)
@@ -3501,7 +3505,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 68.58 29.21 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 20eca6e2-49b9-4ef1-8902-bc397f86bc11)
     (property "Reference" "SW7" (id 0) (at 68.58 25.4 0))
     (property "Value" "Key" (id 1) (at 68.58 31.75 0))
@@ -3531,7 +3535,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 361.95 67.31 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 25765f15-9706-4cfc-832c-d213aa555f4c)
     (property "Reference" "D94" (id 0) (at 361.95 63.5 0))
     (property "Value" "1N4148" (id 1) (at 361.95 69.85 0))
@@ -3565,7 +3569,7 @@
     (uuid 270f197f-71c8-4702-a6b2-bf26c453fb78)
     (property "Reference" "SW4" (id 0) (at 48.26 63.5 0))
     (property "Value" "Key" (id 1) (at 48.26 69.85 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 48.26 62.23 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_PCB" (id 2) (at 48.26 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 48.26 62.23 0)
@@ -3636,10 +3640,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 373.38 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 2da9782b-4599-4335-b49c-dd5dcc8458f5)
     (property "Reference" "SW100" (id 0) (at 373.38 63.5 0))
-    (property "Value" "Key" (id 1) (at 373.38 69.85 0))
+    (property "Value" "Unused" (id 1) (at 373.38 69.85 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 373.38 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3666,10 +3672,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 332.74 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 2e5953a8-6575-4742-8ad3-1c4c3d49be0f)
     (property "Reference" "SW89" (id 0) (at 332.74 76.2 0))
-    (property "Value" "Key" (id 1) (at 332.74 82.55 0))
+    (property "Value" "Unused" (id 1) (at 332.74 82.55 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 332.74 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3700,7 +3708,7 @@
     (uuid 33b1be8f-7b32-4d5f-a3bb-952bba780edd)
     (property "Reference" "SW71" (id 0) (at 271.78 76.2 0))
     (property "Value" "Key" (id 1) (at 271.78 82.55 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 271.78 74.93 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.75u_PCB" (id 2) (at 271.78 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 271.78 74.93 0)
@@ -3715,7 +3723,7 @@
     (uuid 3641c5db-c380-4a5c-b4d8-b2c13b5ee2a5)
     (property "Reference" "SW12" (id 0) (at 68.58 88.9 0))
     (property "Value" "Key" (id 1) (at 68.58 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 68.58 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 68.58 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 68.58 87.63 0)
@@ -3910,7 +3918,7 @@
     (uuid 3c98eb8d-5895-4263-bd90-51d45dfbe3aa)
     (property "Reference" "SW78" (id 0) (at 292.1 88.9 0))
     (property "Value" "Key" (id 1) (at 292.1 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 292.1 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 292.1 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 292.1 87.63 0)
@@ -3921,7 +3929,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 219.71 92.71 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 3e362036-4472-4e54-8413-20adbe77a56b)
     (property "Reference" "D54" (id 0) (at 219.71 88.9 0))
     (property "Value" "1N4148" (id 1) (at 219.71 95.25 0))
@@ -3981,10 +3989,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 292.1 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 433b3728-ebf5-4a26-8276-74c728ccd151)
     (property "Reference" "SW77" (id 0) (at 292.1 76.2 0))
-    (property "Value" "Key" (id 1) (at 292.1 82.55 0))
+    (property "Value" "Unused" (id 1) (at 292.1 82.55 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 292.1 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4026,7 +4036,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 321.31 80.01 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 45f5b1ed-1e95-4fda-a936-449874f505e7)
     (property "Reference" "D83" (id 0) (at 321.31 76.2 0))
     (property "Value" "1N4148" (id 1) (at 321.31 82.55 0))
@@ -4071,10 +4081,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 210.82 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 49669af7-2e37-4f87-9d33-63c4bd291709)
     (property "Reference" "SW54" (id 0) (at 210.82 88.9 0))
-    (property "Value" "Key" (id 1) (at 210.82 95.25 0))
+    (property "Value" "Unused" (id 1) (at 210.82 95.25 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 210.82 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4105,7 +4117,7 @@
     (uuid 4ba6c10c-360f-4e4f-812f-6069c76da82d)
     (property "Reference" "SW72" (id 0) (at 271.78 88.9 0))
     (property "Value" "Key" (id 1) (at 271.78 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 271.78 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 271.78 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 271.78 87.63 0)
@@ -4176,7 +4188,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 321.31 67.31 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 528146ac-4de1-4a56-a28d-310ff88369a3)
     (property "Reference" "D82" (id 0) (at 321.31 63.5 0))
     (property "Value" "1N4148" (id 1) (at 321.31 69.85 0))
@@ -4311,7 +4323,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 138.43 92.71 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 5e08793b-2732-4183-991e-246776c2f961)
     (property "Reference" "D30" (id 0) (at 138.43 88.9 0))
     (property "Value" "1N4148" (id 1) (at 138.43 95.25 0))
@@ -4375,7 +4387,7 @@
     (uuid 607946a4-b92b-4e67-ac5d-745960c4bf90)
     (property "Reference" "SW3" (id 0) (at 48.26 50.8 0))
     (property "Value" "Key" (id 1) (at 48.26 57.15 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 48.26 49.53 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" (id 2) (at 48.26 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 48.26 49.53 0)
@@ -4510,7 +4522,7 @@
     (uuid 698887e3-d738-440f-84f6-8c81949cd3e2)
     (property "Reference" "SW81" (id 0) (at 312.42 50.8 0))
     (property "Value" "Key" (id 1) (at 312.42 57.15 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 312.42 49.53 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" (id 2) (at 312.42 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 312.42 49.53 0)
@@ -4536,7 +4548,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 158.75 92.71 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 6aa5b92f-b9b8-4d81-baf0-4ce5810bbef5)
     (property "Reference" "D36" (id 0) (at 158.75 88.9 0))
     (property "Value" "1N4148" (id 1) (at 158.75 95.25 0))
@@ -4581,7 +4593,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 240.03 92.71 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 6ca77d8f-3397-441f-8f9d-4440db74d161)
     (property "Reference" "D60" (id 0) (at 240.03 88.9 0))
     (property "Value" "1N4148" (id 1) (at 240.03 95.25 0))
@@ -4615,7 +4627,7 @@
     (uuid 6d42ead4-1567-4339-a603-b7d9e2bd63f7)
     (property "Reference" "SW6" (id 0) (at 48.26 88.9 0))
     (property "Value" "Key" (id 1) (at 48.26 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 48.26 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 48.26 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 48.26 87.63 0)
@@ -4641,10 +4653,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 231.14 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 6f0ea114-e67f-40b7-b2b0-fab170b4e372)
     (property "Reference" "SW60" (id 0) (at 231.14 88.9 0))
-    (property "Value" "Key" (id 1) (at 231.14 95.25 0))
+    (property "Value" "Unused" (id 1) (at 231.14 95.25 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 231.14 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4686,7 +4700,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 382.27 67.31 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 7908ed70-666f-43b5-b45f-61294d8a69aa)
     (property "Reference" "D100" (id 0) (at 382.27 63.5 0))
     (property "Value" "1N4148" (id 1) (at 382.27 69.85 0))
@@ -4791,7 +4805,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 77.47 29.21 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid 7ecc1b24-ea48-414a-94e8-ec7d2b3017e0)
     (property "Reference" "D7" (id 0) (at 77.47 25.4 0))
     (property "Value" "1N4148" (id 1) (at 77.47 31.75 0))
@@ -4840,7 +4854,7 @@
     (uuid 844bcf03-7825-418e-a2ea-a205dfd40639)
     (property "Reference" "SW76" (id 0) (at 292.1 63.5 0))
     (property "Value" "Key" (id 1) (at 292.1 69.85 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 292.1 62.23 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB" (id 2) (at 292.1 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 292.1 62.23 0)
@@ -4855,7 +4869,7 @@
     (uuid 8ce600b7-03d5-4958-a055-48f53c5a9d98)
     (property "Reference" "SW84" (id 0) (at 312.42 88.9 0))
     (property "Value" "Key" (id 1) (at 312.42 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 312.42 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 312.42 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 312.42 87.63 0)
@@ -5031,7 +5045,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 199.39 92.71 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid a054d961-fadb-4d2c-93b4-0edcf20836d0)
     (property "Reference" "D48" (id 0) (at 199.39 88.9 0))
     (property "Value" "1N4148" (id 1) (at 199.39 95.25 0))
@@ -5186,7 +5200,7 @@
     (uuid a892509a-3408-4c37-ac21-c9b51624b51a)
     (property "Reference" "SW66" (id 0) (at 251.46 88.9 0))
     (property "Value" "Key" (id 1) (at 251.46 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 251.46 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" (id 2) (at 251.46 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 251.46 87.63 0)
@@ -5197,7 +5211,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 118.11 92.71 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid a9e470ee-fcab-4477-bb47-0d46939224e6)
     (property "Reference" "D24" (id 0) (at 118.11 88.9 0))
     (property "Value" "1N4148" (id 1) (at 118.11 95.25 0))
@@ -5212,7 +5226,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 341.63 80.01 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid abdfaf36-6d95-4f94-91ac-41f181e3af0b)
     (property "Reference" "D89" (id 0) (at 341.63 76.2 0))
     (property "Value" "1N4148" (id 1) (at 341.63 82.55 0))
@@ -5227,10 +5241,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 129.54 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid ac6287cb-b110-4fc3-b996-a05cb2608afa)
     (property "Reference" "SW30" (id 0) (at 129.54 88.9 0))
-    (property "Value" "Key" (id 1) (at 129.54 95.25 0))
+    (property "Value" "Unused" (id 1) (at 129.54 95.25 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 129.54 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5272,10 +5288,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 312.42 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid af5dd9b9-c5ef-4538-b2b6-f21112193bae)
     (property "Reference" "SW83" (id 0) (at 312.42 76.2 0))
-    (property "Value" "Key" (id 1) (at 312.42 82.55 0))
+    (property "Value" "Unused" (id 1) (at 312.42 82.55 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 312.42 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5377,7 +5395,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 300.99 80.01 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid b95b60e0-87ff-4bf4-9276-6f0cdecf42c9)
     (property "Reference" "D77" (id 0) (at 300.99 76.2 0))
     (property "Value" "1N4148" (id 1) (at 300.99 82.55 0))
@@ -5392,10 +5410,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 149.86 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid b9789555-4632-4e2f-b943-37e43167856e)
     (property "Reference" "SW36" (id 0) (at 149.86 88.9 0))
-    (property "Value" "Key" (id 1) (at 149.86 95.25 0))
+    (property "Value" "Unused" (id 1) (at 149.86 95.25 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 149.86 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5549,7 +5569,7 @@
     (uuid c62e5b43-3472-4716-8d2c-41d9bff92b75)
     (property "Reference" "SW42" (id 0) (at 170.18 88.9 0))
     (property "Value" "Key" (id 1) (at 170.18 95.25 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 170.18 87.63 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_6.25u_PCB" (id 2) (at 170.18 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 170.18 87.63 0)
@@ -5609,7 +5629,7 @@
     (uuid c9db4966-5c42-41bd-82a4-8de7f0950582)
     (property "Reference" "SW80" (id 0) (at 312.42 38.1 0))
     (property "Value" "Key" (id 1) (at 312.42 44.45 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 312.42 36.83 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB" (id 2) (at 312.42 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 312.42 36.83 0)
@@ -5741,10 +5761,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 312.42 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid d52df060-76dd-4a90-a92c-412979a808d4)
     (property "Reference" "SW82" (id 0) (at 312.42 63.5 0))
-    (property "Value" "Key" (id 1) (at 312.42 69.85 0))
+    (property "Value" "Unused" (id 1) (at 312.42 69.85 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 312.42 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5771,7 +5793,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 382.27 80.01 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid d9818d54-5896-409c-87c8-535f79fac232)
     (property "Reference" "D101" (id 0) (at 382.27 76.2 0))
     (property "Value" "1N4148" (id 1) (at 382.27 82.55 0))
@@ -5786,10 +5808,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 109.22 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid da986bbe-bcdf-47dc-89bd-2ffa902ee91f)
     (property "Reference" "SW24" (id 0) (at 109.22 88.9 0))
-    (property "Value" "Key" (id 1) (at 109.22 95.25 0))
+    (property "Value" "Unused" (id 1) (at 109.22 95.25 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 109.22 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5831,10 +5855,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 190.5 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid dc60c3d4-57b5-4583-8925-20c1a2ca6d2a)
     (property "Reference" "SW48" (id 0) (at 190.5 88.9 0))
-    (property "Value" "Key" (id 1) (at 190.5 95.25 0))
+    (property "Value" "Unused" (id 1) (at 190.5 95.25 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 190.5 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5966,7 +5992,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 341.63 67.31 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid e60ff6d8-af84-41fa-95d7-e34ea7b33947)
     (property "Reference" "D88" (id 0) (at 341.63 63.5 0))
     (property "Value" "1N4148" (id 1) (at 341.63 69.85 0))
@@ -6086,10 +6112,12 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 373.38 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board no)
     (uuid ecf02b87-3a88-4666-b8c1-826a41623926)
     (property "Reference" "SW101" (id 0) (at 373.38 76.2 0))
-    (property "Value" "Key" (id 1) (at 373.38 82.55 0))
+    (property "Value" "Unused" (id 1) (at 373.38 82.55 0)
+      (effects (font (size 1.27 1.27) bold italic))
+    )
     (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 373.38 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6240,7 +6268,7 @@
     (uuid f9b61870-0449-41d3-b6a6-058bfa00e78a)
     (property "Reference" "SW5" (id 0) (at 48.26 76.2 0))
     (property "Value" "Key" (id 1) (at 48.26 82.55 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 48.26 74.93 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB" (id 2) (at 48.26 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 48.26 74.93 0)
@@ -6682,16 +6710,16 @@
       (reference "SW2") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/607946a4-b92b-4e67-ac5d-745960c4bf90"
-      (reference "SW3") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW3") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB")
     )
     (path "/270f197f-71c8-4702-a6b2-bf26c453fb78"
-      (reference "SW4") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW4") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_PCB")
     )
     (path "/f9b61870-0449-41d3-b6a6-058bfa00e78a"
-      (reference "SW5") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW5") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB")
     )
     (path "/6d42ead4-1567-4339-a603-b7d9e2bd63f7"
-      (reference "SW6") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW6") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/20eca6e2-49b9-4ef1-8902-bc397f86bc11"
       (reference "SW7") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6709,7 +6737,7 @@
       (reference "SW11") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/3641c5db-c380-4a5c-b4d8-b2c13b5ee2a5"
-      (reference "SW12") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW12") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/377129f7-f8d9-4c0c-9c04-9d1f3361ea2c"
       (reference "SW13") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6727,7 +6755,7 @@
       (reference "SW17") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/14f5566a-1a5e-464d-8e0d-f52e2fdd2c4c"
-      (reference "SW18") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW18") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/a842c84e-4b8d-4b26-ac8b-030cd0229227"
       (reference "SW19") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6745,7 +6773,7 @@
       (reference "SW23") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/da986bbe-bcdf-47dc-89bd-2ffa902ee91f"
-      (reference "SW24") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW24") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/542fb9c9-cb40-4e67-97d6-131c6a4b0be4"
       (reference "SW25") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6763,7 +6791,7 @@
       (reference "SW29") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/ac6287cb-b110-4fc3-b996-a05cb2608afa"
-      (reference "SW30") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW30") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/ae58ec02-c28d-4f99-9cb5-c55feed86940"
       (reference "SW31") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6781,7 +6809,7 @@
       (reference "SW35") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/b9789555-4632-4e2f-b943-37e43167856e"
-      (reference "SW36") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW36") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/748c8672-7ce6-4fb6-86eb-5d459b18f053"
       (reference "SW37") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6799,7 +6827,7 @@
       (reference "SW41") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/c62e5b43-3472-4716-8d2c-41d9bff92b75"
-      (reference "SW42") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW42") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_6.25u_PCB")
     )
     (path "/2ddbd1ae-e2a2-46ae-a6e2-5e5cd4813ebf"
       (reference "SW43") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6817,7 +6845,7 @@
       (reference "SW47") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/dc60c3d4-57b5-4583-8925-20c1a2ca6d2a"
-      (reference "SW48") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW48") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/c149fa50-4547-4d7d-9e2b-fc99135ae10d"
       (reference "SW49") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6835,7 +6863,7 @@
       (reference "SW53") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/49669af7-2e37-4f87-9d33-63c4bd291709"
-      (reference "SW54") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW54") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/fc0707c7-8990-4fdb-b3a2-47ceb11dca15"
       (reference "SW55") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6853,7 +6881,7 @@
       (reference "SW59") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/6f0ea114-e67f-40b7-b2b0-fab170b4e372"
-      (reference "SW60") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW60") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/7bbcd1c9-2e28-47a9-8701-6ed62832c2ab"
       (reference "SW61") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6871,7 +6899,7 @@
       (reference "SW65") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/a892509a-3408-4c37-ac21-c9b51624b51a"
-      (reference "SW66") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW66") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/ed321a6e-e24a-48ab-9937-e2f487f0eec3"
       (reference "SW67") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6886,10 +6914,10 @@
       (reference "SW70") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/33b1be8f-7b32-4d5f-a3bb-952bba780edd"
-      (reference "SW71") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW71") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_2.75u_PCB")
     )
     (path "/4ba6c10c-360f-4e4f-812f-6069c76da82d"
-      (reference "SW72") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW72") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/4028363f-83f6-4ce6-8aa8-b02d9870275a"
       (reference "SW73") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6901,31 +6929,31 @@
       (reference "SW75") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/844bcf03-7825-418e-a2ea-a205dfd40639"
-      (reference "SW76") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW76") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB")
     )
     (path "/433b3728-ebf5-4a26-8276-74c728ccd151"
-      (reference "SW77") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW77") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/3c98eb8d-5895-4263-bd90-51d45dfbe3aa"
-      (reference "SW78") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW78") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/bcfa5fff-2bc5-40ac-8849-77b29af3a0ee"
       (reference "SW79") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/c9db4966-5c42-41bd-82a4-8de7f0950582"
-      (reference "SW80") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW80") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB")
     )
     (path "/698887e3-d738-440f-84f6-8c81949cd3e2"
-      (reference "SW81") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW81") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB")
     )
     (path "/d52df060-76dd-4a90-a92c-412979a808d4"
-      (reference "SW82") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW82") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/af5dd9b9-c5ef-4538-b2b6-f21112193bae"
-      (reference "SW83") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW83") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/8ce600b7-03d5-4958-a055-48f53c5a9d98"
-      (reference "SW84") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW84") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
     )
     (path "/a46e2638-67cd-44ce-a852-e0ba79e6b610"
       (reference "SW85") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6937,10 +6965,10 @@
       (reference "SW87") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/07281f0d-bb2a-41e4-b9a7-d78d5a7b1585"
-      (reference "SW88") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW88") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/2e5953a8-6575-4742-8ad3-1c4c3d49be0f"
-      (reference "SW89") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW89") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/5dab6ca7-3100-4058-b2ca-847c7f2b4463"
       (reference "SW90") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6955,7 +6983,7 @@
       (reference "SW93") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/015d8607-3ea7-4223-b32a-2c55d882881a"
-      (reference "SW94") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW94") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/7b595498-9fde-43db-9f50-b4a42921ac18"
       (reference "SW95") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
@@ -6973,10 +7001,10 @@
       (reference "SW99") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/2da9782b-4599-4335-b49c-dd5dcc8458f5"
-      (reference "SW100") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW100") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/ecf02b87-3a88-4666-b8c1-826a41623926"
-      (reference "SW101") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "SW101") (unit 1) (value "Unused") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/9a07dc25-8def-4b04-a2d6-03527da7de17"
       (reference "SW102") (unit 1) (value "Key") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
