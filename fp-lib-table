@@ -1,3 +1,4 @@
 (fp_lib_table
+  (lib (name "RabidKeyboard")(type "KiCad")(uri "${KIPRJMOD}/libraries/rabid_footprints.pretty")(options "")(descr ""))
   (lib (name "RP2040_Stamp")(type "KiCad")(uri "${KIPRJMOD}/libraries/rp2040_stamp_footprints/RP2040_Stamp.pretty")(options "")(descr ""))
 )
