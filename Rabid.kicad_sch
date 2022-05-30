@@ -6218,6 +6218,23 @@
     (pin "2" (uuid 2d7779d5-895a-40d8-b4e8-97ebd42a576d))
   )
 
+  (symbol (lib_id "Mechanical:MountingHole") (at 278.13 280.67 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid daf18d95-a29d-445d-9e50-3ca1c1c87614)
+    (property "Reference" "H8" (id 0) (at 280.67 279.3999 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole4mm" (id 1) (at 280.67 281.9399 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4mm" (id 2) (at 278.13 280.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 278.13 280.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
   (symbol (lib_id "Switch:SW_Push") (at 190.5 92.71 0) (unit 1)
     (in_bom no) (on_board no)
     (uuid dc60c3d4-57b5-4583-8925-20c1a2ca6d2a)
@@ -7078,6 +7095,9 @@
     )
     (path "/02f4d47d-ab1d-4f2f-9935-90a7fb385495"
       (reference "H7") (unit 1) (value "MountingHole.35in") (footprint "RabidKeyboard:MountingHole_.35in")
+    )
+    (path "/daf18d95-a29d-445d-9e50-3ca1c1c87614"
+      (reference "H8") (unit 1) (value "MountingHole4mm") (footprint "MountingHole:MountingHole_4mm")
     )
     (path "/bbea82d0-8c64-4c6e-81d8-7d16f5942bd3"
       (reference "J1") (unit 1) (value "USB Header") (footprint "Connector_JST:JST_PH_S5B-PH-SM4-TB_1x05-1MP_P2.00mm_Horizontal")
