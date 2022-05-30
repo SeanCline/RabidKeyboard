@@ -5,7 +5,9 @@
   (paper "A3")
 
   (title_block
-    (title "RabidKeyboard")
+    (title "${TITLE}")
+    (rev "${REVISION}")
+    (company "${COMPANY}")
   )
 
   (lib_symbols
