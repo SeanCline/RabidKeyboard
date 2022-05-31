@@ -4,7 +4,7 @@
   (descr "Mounting Hole 8.2mm, no annular")
   (tags "mounting hole 8.2mm no annular")
   (attr exclude_from_pos_files exclude_from_bom)
-  (fp_text reference "REF**" (at 0 -5.3) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0 -5.3) (layer "F.SilkS") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ce8e44e6-34a9-47da-8347-47185365a99d)
   )
@@ -16,7 +16,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 4942f351-6236-4118-907a-a6c3e87ffa3f)
   )
-  (fp_circle (center 0 0) (end 4.572 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 6fd3797d-9493-4fec-a02e-d36c4d86e333))
-  (fp_circle (center 0 0) (end 4.826 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b09d5dec-12bb-476f-8f90-ea32fc2c5c2c))
+  (fp_circle (center 0 0) (end 4.2 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 6fd3797d-9493-4fec-a02e-d36c4d86e333))
+  (fp_circle (center 0 0) (end 4.4 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b09d5dec-12bb-476f-8f90-ea32fc2c5c2c))
   (pad "" np_thru_hole circle (at 0 0) (size 8.2 8.2) (drill 8.2) (layers F&B.Cu *.Mask) (tstamp 8e0bd25c-cee7-458c-863b-d2f72287e659))
 )

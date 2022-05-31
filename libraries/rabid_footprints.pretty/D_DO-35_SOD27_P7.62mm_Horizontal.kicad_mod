@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ee86d068-d2ef-4fda-b9c0-9b4714a6aaed)
   )
-  (fp_text value "D_DO-35_SOD27_P7.62mm_Horizontal" (at 3.81 2.12) (layer "F.Fab")
+  (fp_text value "D_DO-35_SOD27_P7.62mm_Horizontal" (at 3.81 2.12) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp c81612ae-d00a-4574-aa22-3262466ab838)
   )
