@@ -3912,10 +3912,10 @@
     (property "Reference" "H3" (id 0) (at 252.73 273.0499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "MountingHole_8.2mm" (id 1) (at 252.73 275.5899 0)
+    (property "Value" "MountingHole_4mm" (id 1) (at 252.73 275.5899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "RabidKeyboard:MountingHole_8.2mm" (id 2) (at 250.19 274.32 0)
+    (property "Footprint" "RabidKeyboard:MountingHole_4mm" (id 2) (at 250.19 274.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 250.19 274.32 0)
@@ -7603,7 +7603,7 @@
       (reference "H2") (unit 1) (value "MountingHole_8.2mm") (footprint "RabidKeyboard:MountingHole_8.2mm")
     )
     (path "/18a8f0d3-5ac8-4d2b-aaf1-8fd815948e6a"
-      (reference "H3") (unit 1) (value "MountingHole_8.2mm") (footprint "RabidKeyboard:MountingHole_8.2mm")
+      (reference "H3") (unit 1) (value "MountingHole_4mm") (footprint "RabidKeyboard:MountingHole_4mm")
     )
     (path "/23a84009-b94e-4473-821b-756b9ff8be21"
       (reference "H4") (unit 1) (value "MountingHole_8.2mm") (footprint "RabidKeyboard:MountingHole_8.2mm")
