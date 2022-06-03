@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ce8e44e6-34a9-47da-8347-47185365a99d)
   )
-  (fp_text value "MountingHole_8.2mm" (at 0 5.3) (layer "F.Fab")
+  (fp_text value "MountingHole_8.2mm" (at 0 5.3) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 16093128-a967-47d2-bb21-40c09e85d420)
   )
