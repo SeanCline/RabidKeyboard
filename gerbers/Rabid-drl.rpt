@@ -1,0 +1,35 @@
+Drill report for Rabid.kicad_pcb
+Created on 6/3/2022 16:12:34
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Rabid-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (12 holes)
+    T2  0.700mm  0.0276"  (6 holes)
+    T3  0.750mm  0.0295"  (5 holes)
+    T4  0.762mm  0.0300"  (6 holes)
+    T5  0.800mm  0.0315"  (214 holes)
+    T6  0.900mm  0.0354"  (6 holes)
+    T7  1.000mm  0.0394"  (9 holes)
+    T8  1.100mm  0.0433"  (8 holes)
+    T9  1.500mm  0.0591"  (174 holes)
+
+    Total plated holes count 440
+
+
+Drill file 'Rabid-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  1.700mm  0.0669"  (174 holes)
+    T2  3.050mm  0.1201"  (10 holes)
+    T3  4.000mm  0.1575"  (98 holes)
+    T4  5.000mm  0.1969"  (1 hole)
+    T5  8.200mm  0.3228"  (6 holes)
+
+    Total unplated holes count 289
