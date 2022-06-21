@@ -7,7 +7,7 @@ import usb_cdc, usb_hid, usb_midi
 # KMK is big. Give it enough stack space.
 supervisor.set_next_stack_limit(4096 + 4096)
 
-# Keep all the mass storage device and COM port enabled when Shift is held during boot.
+# Keep the mass storage device and COM port enabled when Shift is held during boot.
 # This lets Fn+Esc be a normal reset (see code.py) but Fn+Shift+Esc be a boot for programming.
 col = digitalio.DigitalInOut(board.GP11)
 row = digitalio.DigitalInOut(board.GP22)
