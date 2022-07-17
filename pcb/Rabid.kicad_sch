@@ -5288,7 +5288,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6df29cc0-92ba-4b02-9bf3-89ee5f38d720)
     (property "Reference" "SW104" (id 0) (at 33.02 245.11 0))
-    (property "Value" "Reset" (id 1) (at 33.02 247.65 0))
+    (property "Value" "BootSel" (id 1) (at 33.02 247.65 0))
     (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (id 2) (at 33.02 247.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6438,7 +6438,7 @@
     (in_bom yes) (on_board yes)
     (uuid cf26448c-5f86-443a-813f-8205ab4f6600)
     (property "Reference" "SW103" (id 0) (at 33.02 224.79 0))
-    (property "Value" "BootSel" (id 1) (at 33.02 227.33 0))
+    (property "Value" "Reset" (id 1) (at 33.02 227.33 0))
     (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (id 2) (at 33.02 227.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7942,10 +7942,10 @@
       (reference "SW102") (unit 1) (value "→") (footprint "RabidKeyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/cf26448c-5f86-443a-813f-8205ab4f6600"
-      (reference "SW103") (unit 1) (value "BootSel") (footprint "Button_Switch_THT:SW_PUSH_6mm")
+      (reference "SW103") (unit 1) (value "Reset") (footprint "Button_Switch_THT:SW_PUSH_6mm")
     )
     (path "/6df29cc0-92ba-4b02-9bf3-89ee5f38d720"
-      (reference "SW104") (unit 1) (value "Reset") (footprint "Button_Switch_THT:SW_PUSH_6mm")
+      (reference "SW104") (unit 1) (value "BootSel") (footprint "Button_Switch_THT:SW_PUSH_6mm")
     )
     (path "/192f83a9-3726-4136-83ac-7fa10874c246"
       (reference "U1") (unit 1) (value "RP2040_Stamp") (footprint "RP2040_Stamp:RP2040_Stamp_THT")
