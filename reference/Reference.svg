@@ -9,7 +9,7 @@
    viewBox="0 0 1046.6318 1135.4226"
    sodipodi:docname="Reference.svg"
    xml:space="preserve"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -68,7 +68,7 @@
        width="1046.6318"
        height="383.03171"
        preserveAspectRatio="none"
-       xlink:href="Quickfire%20Rapid/Plate.jpg"
+       xlink:href="Quickfire%20Rapid%5CPlate.jpg"
        id="image123"
        x="-2.6066856"
        y="-383.42435" /><image
@@ -85,4 +85,18 @@
        xlink:href="Quickfire%20Rapid/DaughterBoard%20-%20Front.png"
        id="image201"
        x="1068.8931"
-       y="211.82051" /></g></svg>
+       y="211.82051" /><image
+       width="161.2218"
+       height="54.425194"
+       preserveAspectRatio="none"
+       xlink:href="Quickfire%20Rapid/USB%20Daughterboard%20-%20Back.jpg"
+       id="image264"
+       x="1268.2512"
+       y="217.98471" /><image
+       width="161.18057"
+       height="57.905609"
+       preserveAspectRatio="none"
+       xlink:href="Quickfire%20Rapid/USB%20Daughterboard%20-%20Front.jpg"
+       id="image276"
+       x="1270.2489"
+       y="103.15519" /></g></svg>
