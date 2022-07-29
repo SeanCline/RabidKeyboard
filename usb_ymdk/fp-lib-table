@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "ymdk_footprints")(type "KiCad")(uri "${KIPRJMOD}/libraries/ymdk_footprints")(options "")(descr ""))
+  (lib (name "rabid_footprints")(type "KiCad")(uri "C:/Users/Sean/Dropbox/RabidKeyboard/pcb/libraries/rabid_footprints.pretty")(options "")(descr "")(disabled))
+)
