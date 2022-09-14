@@ -4,6 +4,11 @@ import digitalio
 import storage
 import usb_cdc, usb_hid, usb_midi
 
+# Light up an LED during boot for some feedback.
+meta_out = digitalio.DigitalInOut(board.GP28)
+meta_out.direction = digitalio.Direction.OUTPUT
+meta_out.value = 1
+
 # KMK is big. Give it enough stack space.
 supervisor.set_next_stack_limit(4096 + 4096)
 
@@ -23,5 +28,7 @@ if not col.value:
 usb_hid.enable(boot_device=1)
 
 # Put things back how they were for code.py to run.
+meta_out.value = 0
+meta_out.deinit()
 row.deinit()
 col.deinit()
