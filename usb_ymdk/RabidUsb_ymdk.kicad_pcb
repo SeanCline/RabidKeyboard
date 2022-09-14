@@ -196,7 +196,7 @@
 
   (footprint "ymdk_footprints:MountingHole_.12in_Pad_.02in" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp 3b932587-a6df-4be8-96f2-a1f559956381)
-    (at 147.9 55.7)
+    (at 147.9 55.66)
     (descr "Mounting Hole 2.5mm")
     (tags "mounting hole 2.5mm")
     (property "Sheetfile" "RabidUsb_ymdk.kicad_sch")
@@ -220,7 +220,7 @@
     (fp_circle (center 0 0) (end 1.778 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp b4a651b2-0e61-4995-9242-7d47fc9b9726))
     (fp_circle (center 0 0) (end 2.032 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 99f93783-ff7a-488a-a2d2-e643ff8566be))
     (pad "1" thru_hole circle (at 0 0) (size 3.556 3.556) (drill 3.048) (layers *.Cu *.Mask)
-      (net 2 "GND") (pinfunction "1") (pintype "input") (tstamp 3c2dc3e2-a6dc-4b30-995d-f3149b569cb3))
+      (net 2 "GND") (pinfunction "1") (pintype "input") (zone_connect 2) (tstamp 3c2dc3e2-a6dc-4b30-995d-f3149b569cb3))
   )
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
@@ -544,7 +544,7 @@
 
   (footprint "ymdk_footprints:MountingHole_.12in_Pad_.02in" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp 9ef786ad-2d99-4eae-a1cc-29dbed2d8aa7)
-    (at 111.7 55.7)
+    (at 111.7 55.66)
     (descr "Mounting Hole 2.5mm")
     (tags "mounting hole 2.5mm")
     (property "Sheetfile" "RabidUsb_ymdk.kicad_sch")
@@ -568,12 +568,12 @@
     (fp_circle (center 0 0) (end 1.778 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp a3688f79-67b8-4aed-a7d0-15a2f7cdbde9))
     (fp_circle (center 0 0) (end 2.032 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b3efb7b4-ff3c-43f0-aac8-1a023885e7b0))
     (pad "1" thru_hole circle (at 0 0) (size 3.556 3.556) (drill 3.048) (layers *.Cu *.Mask)
-      (net 2 "GND") (pinfunction "1") (pintype "input") (tstamp 8356535b-8824-4517-8f9e-840da0e996cf))
+      (net 2 "GND") (pinfunction "1") (pintype "input") (zone_connect 2) (tstamp 8356535b-8824-4517-8f9e-840da0e996cf))
   )
 
   (footprint "ymdk_footprints:MountingHole_.12in_Pad_.02in" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp b5e191fa-181f-4f78-8784-afe7dfb0186f)
-    (at 147.9 66.5)
+    (at 147.9 66.46)
     (descr "Mounting Hole 2.5mm")
     (tags "mounting hole 2.5mm")
     (property "Sheetfile" "RabidUsb_ymdk.kicad_sch")
@@ -597,7 +597,7 @@
     (fp_circle (center 0 0) (end 1.778 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp dab40197-7150-4921-a4d8-51f0fbdd8e97))
     (fp_circle (center 0 0) (end 2.032 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 8ddba0af-b0b9-4dee-9dee-5bb20821eecb))
     (pad "1" thru_hole circle (at 0 0) (size 3.556 3.556) (drill 3.048) (layers *.Cu *.Mask)
-      (net 2 "GND") (pinfunction "1") (pintype "input") (tstamp 01100289-fcc1-4405-85e6-1e6764310070))
+      (net 2 "GND") (pinfunction "1") (pintype "input") (zone_connect 2) (tstamp 01100289-fcc1-4405-85e6-1e6764310070))
   )
 
   (footprint "Fiducial:Fiducial_1mm_Mask2mm" (layer "F.Cu")
@@ -823,7 +823,7 @@
 
   (footprint "ymdk_footprints:MountingHole_.12in_Pad_.02in" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp fb1767ff-225f-46ea-955f-d2adf03821f2)
-    (at 111.7 66.5)
+    (at 111.7 66.46)
     (descr "Mounting Hole 2.5mm")
     (tags "mounting hole 2.5mm")
     (property "Sheetfile" "RabidUsb_ymdk.kicad_sch")
@@ -847,7 +847,7 @@
     (fp_circle (center 0 0) (end 1.778 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 7dc0ca89-1e91-4b6e-84db-0fe1e48f2474))
     (fp_circle (center 0 0) (end 2.032 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 3e25f7fd-49f7-4734-83a8-d23880b40c22))
     (pad "1" thru_hole circle (at 0 0) (size 3.556 3.556) (drill 3.048) (layers *.Cu *.Mask)
-      (net 2 "GND") (pinfunction "1") (pintype "input") (tstamp 0046ed90-0ba2-4e6f-8cf6-2def26f59fe8))
+      (net 2 "GND") (pinfunction "1") (pintype "input") (zone_connect 2) (tstamp 0046ed90-0ba2-4e6f-8cf6-2def26f59fe8))
   )
 
   (gr_poly
@@ -39833,11 +39833,11 @@
   (gr_arc (start 128.016 52.992) (mid 127.86721 53.35121) (end 127.508 53.5) (layer "Edge.Cuts") (width 0.2) (tstamp 57e24f3b-19d2-4de6-8b38-1f456866eeee))
   (gr_line (start 150.114 68.232) (end 150.114 54.008) (layer "Edge.Cuts") (width 0.2) (tstamp 60f7c182-853d-4f9d-b104-0b3278624c21))
   (gr_arc (start 109.982 68.74) (mid 109.62279 68.59121) (end 109.474 68.232) (layer "Edge.Cuts") (width 0.2) (tstamp 999257d2-bf59-480e-9d8b-3104ae601a3f))
-  (gr_line (start 128.016 51.976) (end 128.016 52.992) (layer "Edge.Cuts") (width 0.2) (tstamp 9bd68893-c6db-47ed-b6f8-243d276faec0))
+  (gr_line (start 128.016 52.01) (end 128.016 52.992) (layer "Edge.Cuts") (width 0.2) (tstamp 9bd68893-c6db-47ed-b6f8-243d276faec0))
   (gr_line (start 149.606 53.5) (end 138.43 53.5) (layer "Edge.Cuts") (width 0.2) (tstamp d30cf57a-1113-461a-ac63-9634e3227b15))
   (gr_arc (start 138.43 53.5) (mid 138.07079 53.35121) (end 137.922 52.992) (layer "Edge.Cuts") (width 0.2) (tstamp d431558e-357b-4287-8ba9-8a7a64a7c895))
-  (gr_line (start 137.922 51.976) (end 137.922 52.992) (layer "Edge.Cuts") (width 0.2) (tstamp d646d4c8-f683-4419-9525-e08022670f69))
-  (gr_line (start 137.922 51.976) (end 128.016 51.976) (layer "Edge.Cuts") (width 0.2) (tstamp dc419292-a607-4ffd-9593-0c4afd69d36a))
+  (gr_line (start 137.922 52.01) (end 137.922 52.992) (layer "Edge.Cuts") (width 0.2) (tstamp d646d4c8-f683-4419-9525-e08022670f69))
+  (gr_line (start 137.922 52.01) (end 128.016 52.01) (layer "Edge.Cuts") (width 0.2) (tstamp dc419292-a607-4ffd-9593-0c4afd69d36a))
   (gr_arc (start 150.114 68.232) (mid 149.96521 68.59121) (end 149.606 68.74) (layer "Edge.Cuts") (width 0.2) (tstamp e12f6876-07b9-441d-9026-2249c4f6781a))
   (gr_line (start 109.474 54.008) (end 109.474 68.232) (layer "Edge.Cuts") (width 0.2) (tstamp e6068641-6331-4d41-b7d5-48ea53a91dd6))
   (gr_text "JLCJLCJLCJLC" (at 119.7 67.65) (layer "B.SilkS") (tstamp 275168d0-50f1-469a-9dd0-94a2ce627f05)
