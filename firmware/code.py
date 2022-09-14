@@ -4,27 +4,37 @@ import board
 import digitalio
 
 from kmk.kmk_keyboard import KMKKeyboard
+from kmk.scanners.keypad import MatrixScanner, DiodeOrientation
 from kmk.keys import KC
-from kmk.scanners import DiodeOrientation
 from kmk.modules.layers import Layers
 from kmk.extensions import Extension
 from kmk.extensions.media_keys import MediaKeys
 from kmk.extensions.lock_status import LockStatus
 
 # Set up the key matrix.
-keyboard = KMKKeyboard()
+class KMKRabidKeyboard(KMKKeyboard):
+    def __init__(self):
+        self.col_pins = (
+            board.GP0, board.GP1, board.GP2, board.GP3, board.GP4, board.GP5, board.GP6,
+            board.GP7, board.GP8, board.GP9, board.GP10, board.GP11, board.GP12, board.GP13,
+            board.GP14, board.GP15, board.GP16
+        )
 
-keyboard.col_pins = (
-    board.GP0, board.GP1, board.GP2, board.GP3, board.GP4, board.GP5, board.GP6,
-    board.GP7, board.GP8, board.GP9, board.GP10, board.GP11, board.GP12, board.GP13,
-    board.GP14, board.GP15, board.GP16
-)
+        self.row_pins = (
+            board.GP26, board.GP25, board.GP24, board.GP23, board.GP22, board.GP20
+        )
 
-keyboard.row_pins = (
-    board.GP26, board.GP25, board.GP24, board.GP23, board.GP22, board.GP20
-)
+        self.diode_orientation = DiodeOrientation.ROW2COL
+        
+        self.matrix = MatrixScanner(
+            column_pins=self.col_pins,
+            row_pins=self.row_pins,
+            columns_to_anodes=self.diode_orientation,
+            interval=.005,
+            max_events=64
+        )
 
-keyboard.diode_orientation = DiodeOrientation.ROW2COL
+keyboard = KMKRabidKeyboard()
 
 # Set up the mappings in each layer.
 keyboard.modules.append(Layers())
@@ -84,5 +94,5 @@ keyboard.extensions.append(ls_ext)
 keyboard.extensions.append(LockLeds(ls_ext, board.A3, board.GP28, board.GP27))
 
 if __name__ == '__main__':
-    keyboard.debug_enabled = True
+    #keyboard.debug_enabled = True
     keyboard.go()
