@@ -1,7 +1,11 @@
 # RabidKeyboard
 # https://sdcline.com/RabidKeyboard
 import board
+import time
 import digitalio
+import supervisor
+import traceback
+import microcontroller
 
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.scanners.keypad import MatrixScanner, DiodeOrientation
@@ -79,20 +83,41 @@ class LockLeds(Extension):
     def during_bootup(self, _):
         return
     def before_hid_send(self, _):
-        return
+        self.caps_out.value = self.ls.get_caps_lock()
+        self.scroll_out.value = self.ls.get_scroll_lock()
     def after_hid_send(self, _):
         return
     def before_matrix_scan(self, _):
         return
-    def after_matrix_scan(self, keyboard):
-        self.caps_out.value = self.ls.get_caps_lock()
-        self.meta_out.value = (keyboard.active_layers[0] == 1)
-        self.scroll_out.value = self.ls.get_scroll_lock()
+    def after_matrix_scan(self, sandbox):
+        self.meta_out.value = (sandbox.active_layers[0] == 1)
 
 ls_ext = LockStatus()
 keyboard.extensions.append(ls_ext)
 keyboard.extensions.append(LockLeds(ls_ext, board.A3, board.GP28, board.GP27))
 
+def wait_for_usb():
+    """https://github.com/adafruit/circuitpython/issues/6018"""
+    while not supervisor.runtime.usb_connected:
+        time.sleep(0.2)
+
+def try_write_err(ex):
+    traceback.print_exception(ex, ex, ex.__traceback__)
+    try:
+        with open('exception.txt', 'w') as f:
+            f.write(traceback.format_exception(ex, ex, ex.__traceback__))
+    except Exception as e:
+        print('Failed writing error to file.')
+
+def main():
+    try:
+        wait_for_usb()
+        #keyboard.debug_enabled = True
+        keyboard.go()
+    except Exception as e:
+        try_write_err(e)
+        time.sleep(1)
+        microcontroller.reset()
+
 if __name__ == '__main__':
-    #keyboard.debug_enabled = True
-    keyboard.go()
+    main()
