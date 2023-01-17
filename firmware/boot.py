@@ -9,7 +9,11 @@ meta_led = digitalio.DigitalInOut(board.GP28)
 meta_led.switch_to_output(value=True)
 
 # KMK is big. Give it enough stack space.
-supervisor.set_next_stack_limit(4096 + 4096)
+stack_limit = 4096+4096
+if callable(getattr(supervisor, 'set_next_stack_limit', None)):
+    supervisor.set_next_stack_limit(stack_limit)
+else:
+    supervisor.runtime.next_stack_limit = stack_limit
 
 # Keep the mass storage device and COM port enabled when Shift is held during boot.
 # This lets Fn+Esc be a normal reset (see code.py) but Fn+Shift+Esc be a boot for programming.
