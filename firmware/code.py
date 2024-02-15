@@ -14,6 +14,7 @@ from kmk.modules.layers import Layers
 from kmk.extensions import Extension
 from kmk.extensions.media_keys import MediaKeys
 from kmk.extensions.lock_status import LockStatus
+from kmk.modules.dynamic_sequences import DynamicSequences
 
 # Set up the key matrix.
 class KMKRabidKeyboard(KMKKeyboard):
@@ -34,7 +35,7 @@ class KMKRabidKeyboard(KMKKeyboard):
             column_pins=self.col_pins,
             row_pins=self.row_pins,
             columns_to_anodes=self.diode_orientation,
-            interval=.005,
+            interval=.02,
             max_events=64
         )
 
@@ -43,6 +44,14 @@ keyboard = KMKRabidKeyboard()
 # Set up the mappings in each layer.
 keyboard.modules.append(Layers())
 keyboard.extensions.append(MediaKeys())
+
+dyn_seq = DynamicSequences(
+    slots=10, # The number of sequence slots to use
+    timeout=60000,  # Maximum time to spend in record or config mode before stopping automatically, milliseconds
+    key_interval=25,  # Milliseconds between key events while playing
+    use_recorded_speed=False,  # Whether to play the sequence at the speed it was typed
+)
+keyboard.modules.append(dyn_seq)
 
 # Define the layer-switching keys.
 Fn = KC.MO(2)
@@ -65,7 +74,18 @@ def transparentUnlessMeta(kc):
 metalock_layer = [transparentUnlessMeta(kc) for kc in base_layer]
 
 # Layer 2: Active while Fn key is held.
-fn_layer = [KC.RESET, KC.NO, KC.BOOTLOADER, KC.NO, KC.NO, KC.NO, KC.MPLY, KC.MSTP, KC.MPRV, KC.MNXT, MetaLock, KC.MUTE, KC.VOLD, KC.VOLU] + [KC.NO]*73
+SEQ_REC = KC.RECORD_SEQUENCE()
+SEQ_STP = KC.STOP_SEQUENCE()
+SEQ_PLY = KC.PLAY_SEQUENCE()
+SEQ_SET = KC.SET_SEQUENCE
+fn_layer = [
+    KC.RESET, KC.NO, KC.BOOTLOADER, KC.NO, KC.NO, KC.NO, KC.MPLY, KC.MSTP, KC.MPRV, KC.MNXT, MetaLock, KC.MUTE, KC.VOLD, KC.VOLU, KC.NO, KC.NO, KC.NO,
+    SEQ_REC, SEQ_SET(1), SEQ_SET(2), SEQ_SET(3),  SEQ_SET(4),  SEQ_SET(5),  SEQ_SET(6),  SEQ_SET(7), SEQ_SET(8), SEQ_SET(9), SEQ_SET(0), KC.NO, KC.NO, SEQ_STP, KC.NO, KC.NO, KC.NO,
+    KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,
+    KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, SEQ_PLY, KC.NO, KC.NO, KC.NO, KC.NO,
+    KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,
+    KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,
+]
 
 # Finish up the layers.
 keyboard.keymap = [base_layer, metalock_layer, fn_layer]
@@ -112,7 +132,7 @@ def try_write_err(ex):
 def main():
     try:
         wait_for_usb()
-        #keyboard.debug_enabled = True
+        keyboard.debug_enabled = False
         keyboard.go()
     except Exception as e:
         try_write_err(e)
