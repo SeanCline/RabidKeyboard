@@ -30,7 +30,7 @@ This PCB replaces the original mini-USB daughterboard in the Cooler Master QFR. 
 ![Costar USB-C Front 3D Render](usb_costar/images/usb_costar-front-3d.png)
 ![Costar USB-C Back 3D Render](usb_costar/images/usb_costar-back-3d.png)
 
-## YMDK USB-C Daugterboard
+## YMDK USB-C Daughterboard
 Just like the Cooler Master QFR, Filco Majestouch 2, and KBParadise V80, the RabidKeyboard PCB in this repo fits into the YMDK F87 aluminum case.
 [[Amazon]](https://amzn.com/dp/B06XNTWXWL)
 [[AliExpress]](https://www.aliexpress.us/item/2251832431251957.html)
