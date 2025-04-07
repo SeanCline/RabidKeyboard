@@ -8,7 +8,8 @@ import traceback
 import microcontroller
 
 from kmk.kmk_keyboard import KMKKeyboard
-from kmk.scanners.keypad import MatrixScanner, DiodeOrientation
+from kmk.scanners import DiodeOrientation
+from kmk.scanners.keypad import MatrixScanner
 from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.extensions import Extension
@@ -36,7 +37,8 @@ class KMKRabidKeyboard(KMKKeyboard):
             column_pins=self.col_pins,
             row_pins=self.row_pins,
             columns_to_anodes=self.diode_orientation,
-            interval=.02,
+            interval=0.01,
+            debounce_threshold=3,
             max_events=64
         )
 
