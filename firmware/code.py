@@ -15,6 +15,7 @@ from kmk.extensions import Extension
 from kmk.extensions.media_keys import MediaKeys
 from kmk.extensions.lock_status import LockStatus
 from kmk.modules.dynamic_sequences import DynamicSequences
+from mouse_jiggler import MouseJiggler
 
 # Set up the key matrix.
 class KMKRabidKeyboard(KMKKeyboard):
@@ -53,6 +54,9 @@ dyn_seq = DynamicSequences(
 )
 keyboard.modules.append(dyn_seq)
 
+# Set up the Mouse Jiggler.
+keyboard.modules.append(MouseJiggler())
+
 # Define the layer-switching keys.
 Fn = KC.MO(2)
 MetaLock = KC.TG(1)
@@ -79,7 +83,7 @@ SEQ_STP = KC.STOP_SEQUENCE()
 SEQ_PLY = KC.PLAY_SEQUENCE()
 SEQ_SET = KC.SET_SEQUENCE
 fn_layer = [
-    KC.RESET, KC.NO, KC.BOOTLOADER, KC.NO, KC.NO, KC.NO, KC.MPLY, KC.MSTP, KC.MPRV, KC.MNXT, MetaLock, KC.MUTE, KC.VOLD, KC.VOLU, KC.NO, KC.NO, KC.NO,
+    KC.RESET, KC.NO, KC.BOOTLOADER, KC.NO, KC.NO, KC.NO, KC.MPLY, KC.MSTP, KC.MPRV, KC.MNXT, MetaLock, KC.MUTE, KC.VOLD, KC.VOLU, KC.NO, KC.MJ_TOGGLE, KC.NO,
     SEQ_REC, SEQ_SET(1), SEQ_SET(2), SEQ_SET(3),  SEQ_SET(4),  SEQ_SET(5),  SEQ_SET(6),  SEQ_SET(7), SEQ_SET(8), SEQ_SET(9), SEQ_SET(0), KC.NO, KC.NO, SEQ_STP, KC.NO, KC.NO, KC.NO,
     KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,
     KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, SEQ_PLY, KC.NO, KC.NO, KC.NO, KC.NO,

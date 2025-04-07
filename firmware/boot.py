@@ -21,7 +21,7 @@ if not shift_col.value:
 usb_midi.disable()
 
 # Let the keyboard be used in the BIOS.
-hid_devices = (usb_hid.Device.KEYBOARD, usb_hid.Device.CONSUMER_CONTROL)
+hid_devices = (usb_hid.Device.KEYBOARD, usb_hid.Device.CONSUMER_CONTROL, usb_hid.Device.MOUSE)
 usb_hid.enable(hid_devices, boot_device=1)
 
 # Put things back how they were for code.py to run.
