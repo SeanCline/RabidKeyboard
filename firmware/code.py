@@ -110,41 +110,37 @@ class LockStatusLeds(LockStatus):
         self.meta_led.direction = digitalio.Direction.OUTPUT
         self.scroll_led = pwmio.PWMOut(scroll_led)
         self.mj_ext = mj_ext
-        self._prev_caps_state = None
-        self._prev_meta_state = None
-        self._prev_scroll_state = None
         self._prev_jiggle_state = None
+        self._last_fade_tick = 0
         self.fade_interval = .01
         
     def after_hid_send(self, sandbox):
         super().after_hid_send(sandbox)
         
-        caps_lock_on = self.get_caps_lock()
-        scroll_lock_on = self.get_scroll_lock()
-        jiggle_on = self.mj_ext is not None and self.mj_ext.is_jiggling
-        
+        # Throttle status led updates.
+        ticks_ms = supervisor.ticks_ms()
+        ticks_since_last_fade = ticks_ms - self._last_fade_tick
+        if (ticks_since_last_fade > 0 and ticks_since_last_fade < 30):
+            return
+        self._last_fade_tick = ticks_ms
+
         # Caps Lock
-        if caps_lock_on != self._prev_caps_state:
-            self.caps_led.value = self._prev_caps_state = caps_lock_on
+        self.caps_led.value = self.get_caps_lock()
+        
+        # Meta Lock
+        self.meta_led.value = (sandbox.active_layers[0] == 1)
         
         # Scroll Lock & Jiggle
+        jiggle_on = self.mj_ext is not None and self.mj_ext.is_jiggling
         if jiggle_on:
-            self.scroll_led.duty_cycle = int((math.sin(supervisor.ticks_ms()*self.fade_interval)+1)/2 * 65535)
+            fade_ticks = ticks_ms & 0xFFFF # Truncate the high bits so conversion to float doesn't lose precision.
+            self.scroll_led.duty_cycle = int((math.sin(fade_ticks*self.fade_interval)+1)/2 * 65535)
             self._prev_jiggle_state = jiggle_on
         elif jiggle_on != self._prev_jiggle_state:
             self.scroll_led.duty_cycle = 0
             self._prev_jiggle_state = jiggle_on
-        elif scroll_lock_on != self._prev_scroll_state:
-            self.scroll_led.duty_cycle = scroll_lock_on * 65535
-            self._prev_scroll_state = scroll_lock_on
-            
-    def after_matrix_scan(self, sandbox):
-        super().after_matrix_scan(sandbox)
-        
-        # Meta Lock
-        meta_lock_on = (sandbox.active_layers[0] == 1)
-        if meta_lock_on != self._prev_meta_state:
-            self.meta_led.value = self._prev_meta_state = meta_lock_on
+        else:
+            self.scroll_led.duty_cycle = self.get_scroll_lock() * 65535
 
 keyboard.extensions.append(LockStatusLeds(board.A3, board.GP28, board.GP27, mj_ext))
 
