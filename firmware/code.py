@@ -3,6 +3,8 @@
 import board
 import time
 import digitalio
+import pwmio
+import math
 import supervisor
 import traceback
 import microcontroller
@@ -59,7 +61,8 @@ dyn_seq = DynamicSequences(
 keyboard.modules.append(dyn_seq)
 
 # Set up the Mouse Jiggler.
-keyboard.modules.append(MouseJiggler())
+mj_ext = MouseJiggler()
+keyboard.modules.append(mj_ext)
 
 # Define the layer-switching keys.
 Fn = KC.MO(2)
@@ -99,30 +102,52 @@ fn_layer = [
 keyboard.keymap = [base_layer, metalock_layer, fn_layer]
 
 # Define an extension that keeps the Caps, Scroll, and Meta lock LEDs synched with the keyboard/HID state.
-class LockLeds(Extension):
-    def __init__(self, ls_ext : LockStatus, caps_led : Pin, meta_led : Pin, scroll_led : Pin):
-        self.ls = ls_ext
-        self.caps_out = digitalio.DigitalInOut(caps_led)
-        self.caps_out.direction = digitalio.Direction.OUTPUT
-        self.meta_out = digitalio.DigitalInOut(meta_led)
-        self.meta_out.direction = digitalio.Direction.OUTPUT
-        self.scroll_out = digitalio.DigitalInOut(scroll_led)
-        self.scroll_out.direction = digitalio.Direction.OUTPUT
-    def during_bootup(self, _):
-        return
-    def before_hid_send(self, _):
-        self.caps_out.value = self.ls.get_caps_lock()
-        self.scroll_out.value = self.ls.get_scroll_lock()
-    def after_hid_send(self, _):
-        return
-    def before_matrix_scan(self, _):
-        return
+class LockStatusLeds(LockStatus):
+    def __init__(self, caps_led : Pin, meta_led : Pin, scroll_led : Pin, mj_ext : MouseJiggler = None):
+        super().__init__()
+        self.caps_led = digitalio.DigitalInOut(caps_led)
+        self.caps_led.direction = digitalio.Direction.OUTPUT
+        self.meta_led = digitalio.DigitalInOut(meta_led)
+        self.meta_led.direction = digitalio.Direction.OUTPUT
+        self.scroll_led = pwmio.PWMOut(scroll_led)
+        self.mj_ext = mj_ext
+        self._prev_caps_state = None
+        self._prev_meta_state = None
+        self._prev_scroll_state = None
+        self._prev_jiggle_state = None
+        self.fade_interval = .01
+        
+    def after_hid_send(self, sandbox):
+        super().after_hid_send(sandbox)
+        
+        caps_lock_on = self.get_caps_lock()
+        scroll_lock_on = self.get_scroll_lock()
+        jiggle_on = self.mj_ext is not None and self.mj_ext.is_jiggling
+        
+        # Caps Lock
+        if caps_lock_on != self._prev_caps_state:
+            self.caps_led.value = self._prev_caps_state = caps_lock_on
+        
+        # Scroll Lock & Jiggle
+        if jiggle_on:
+            self.scroll_led.duty_cycle = int((math.sin(supervisor.ticks_ms()*self.fade_interval)+1)/2 * 65535)
+            self._prev_jiggle_state = jiggle_on
+        elif jiggle_on != self._prev_jiggle_state:
+            self.scroll_led.duty_cycle = 0
+            self._prev_jiggle_state = jiggle_on
+        elif scroll_lock_on != self._prev_scroll_state:
+            self.scroll_led.duty_cycle = scroll_lock_on * 65535
+            self._prev_scroll_state = scroll_lock_on
+            
     def after_matrix_scan(self, sandbox):
-        self.meta_out.value = (sandbox.active_layers[0] == 1)
+        super().after_matrix_scan(sandbox)
+        
+        # Meta Lock
+        meta_lock_on = (sandbox.active_layers[0] == 1)
+        if meta_lock_on != self._prev_meta_state:
+            self.meta_led.value = self._prev_meta_state = meta_lock_on
 
-ls_ext = LockStatus()
-keyboard.extensions.append(ls_ext)
-keyboard.extensions.append(LockLeds(ls_ext, board.A3, board.GP28, board.GP27))
+keyboard.extensions.append(LockStatusLeds(board.A3, board.GP28, board.GP27, mj_ext))
 
 def wait_for_usb():
     """https://github.com/adafruit/circuitpython/issues/6018"""
