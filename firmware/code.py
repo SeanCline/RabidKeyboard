@@ -6,7 +6,6 @@ import digitalio
 import pwmio
 import math
 import supervisor
-import traceback
 import microcontroller
 
 from kmk.kmk_keyboard import KMKKeyboard
@@ -154,21 +153,11 @@ def wait_for_usb():
     while not supervisor.runtime.usb_connected:
         time.sleep(0.2)
 
-def try_write_err(ex):
-    traceback.print_exception(ex, ex, ex.__traceback__)
-    try:
-        with open('exception.txt', 'w') as f:
-            f.write(traceback.format_exception(ex, ex, ex.__traceback__))
-    except Exception as e:
-        print('Failed writing error to file.')
-
 def main():
     try:
         wait_for_usb()
-        keyboard.debug_enabled = False
         keyboard.go()
     except Exception as e:
-        try_write_err(e)
         time.sleep(1)
         microcontroller.reset()
 
