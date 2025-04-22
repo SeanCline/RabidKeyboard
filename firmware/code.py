@@ -17,7 +17,7 @@ from kmk.extensions import Extension
 from kmk.extensions.media_keys import MediaKeys
 from kmk.extensions.lock_status import LockStatus
 from kmk.modules.dynamic_sequences import DynamicSequences
-from mouse_jiggler import MouseJiggler
+from kmk.modules.mouse_jiggler import MouseJiggler
 
 # Set up the key matrix.
 class KMKRabidKeyboard(KMKKeyboard):
@@ -60,8 +60,8 @@ dyn_seq = DynamicSequences(
 keyboard.modules.append(dyn_seq)
 
 # Set up the Mouse Jiggler.
-mj_ext = MouseJiggler()
-keyboard.modules.append(mj_ext)
+jiggler = MouseJiggler()
+keyboard.modules.append(jiggler)
 
 # Define the layer-switching keys.
 Fn = KC.MO(2)
@@ -102,14 +102,14 @@ keyboard.keymap = [base_layer, metalock_layer, fn_layer]
 
 # Define an extension that keeps the Caps, Scroll, and Meta lock LEDs synched with the keyboard/HID state.
 class LockStatusLeds(LockStatus):
-    def __init__(self, caps_led : Pin, meta_led : Pin, scroll_led : Pin, mj_ext : MouseJiggler = None):
+    def __init__(self, caps_led : Pin, meta_led : Pin, scroll_led : Pin, jiggler : MouseJiggler = None):
         super().__init__()
         self.caps_led = digitalio.DigitalInOut(caps_led)
         self.caps_led.direction = digitalio.Direction.OUTPUT
         self.meta_led = digitalio.DigitalInOut(meta_led)
         self.meta_led.direction = digitalio.Direction.OUTPUT
         self.scroll_led = pwmio.PWMOut(scroll_led)
-        self.mj_ext = mj_ext
+        self._jiggler = jiggler
         self._prev_jiggle_state = None
         self._last_fade_tick = 0
         self.fade_interval = .01
@@ -131,7 +131,7 @@ class LockStatusLeds(LockStatus):
         self.meta_led.value = (sandbox.active_layers[0] == 1)
         
         # Scroll Lock & Jiggle
-        jiggle_on = self.mj_ext is not None and self.mj_ext.is_jiggling
+        jiggle_on = self._jiggler is not None and self._jiggler.is_jiggling
         if jiggle_on:
             fade_ticks = ticks_ms & 0xFFFF # Truncate the high bits so conversion to float doesn't lose precision.
             self.scroll_led.duty_cycle = int((math.sin(fade_ticks*self.fade_interval)+1)/2 * 65535)
@@ -142,7 +142,7 @@ class LockStatusLeds(LockStatus):
         else:
             self.scroll_led.duty_cycle = self.get_scroll_lock() * 65535
 
-keyboard.extensions.append(LockStatusLeds(board.A3, board.GP28, board.GP27, mj_ext))
+keyboard.extensions.append(LockStatusLeds(board.A3, board.GP28, board.GP27, jiggler))
 
 def wait_for_usb():
     """https://github.com/adafruit/circuitpython/issues/6018"""
