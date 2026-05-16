@@ -6,7 +6,8 @@ from kmk.bootcfg import bootcfg
 meta_led = digitalio.DigitalInOut(board.GP28)
 meta_led.switch_to_output(value=True)
 
-# Fn+Esc is a normal reset (see code.py) but Fn+Shift+Esc will allow programming.
+# Fn+Esc is a normal reset (see code.py) 
+# Fn+RShift+Esc (continuing to hold RShift diring boot) will enter programming mode.
 bootcfg(
     sense=board.GP22, source=board.GP11, # Right shift key during boot enables serial and usb_drive.
     storage=False,

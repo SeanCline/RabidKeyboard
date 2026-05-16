@@ -7,6 +7,7 @@ import pwmio
 import math
 import supervisor
 import microcontroller
+from microcontroller import Pin
 
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.scanners import DiodeOrientation
@@ -36,14 +37,14 @@ class KMKRabidKeyboard(KMKKeyboard):
 
         self.diode_orientation = DiodeOrientation.ROW2COL
         
-        self.matrix = MatrixScanner(
+        self.matrix = [MatrixScanner(
             column_pins=self.col_pins,
             row_pins=self.row_pins,
             columns_to_anodes=self.diode_orientation,
             interval=0.01,
             debounce_threshold=3,
             max_events=64
-        )
+        )]
 
 keyboard = KMKRabidKeyboard()
 
@@ -128,7 +129,7 @@ class LockStatusLeds(LockStatus):
         self.caps_led.value = self.get_caps_lock()
         
         # Meta Lock
-        self.meta_led.value = (sandbox.active_layers[0] == 1)
+        self.meta_led.value = (1 in sandbox.active_layers)
         
         # Scroll Lock & Jiggle
         jiggle_on = self._jiggler is not None and self._jiggler.is_jiggling
